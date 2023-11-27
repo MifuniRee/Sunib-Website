@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Verdana",Helvetica,'Passion One',sans-serif;
+}
+
+header{
+    background: linear-gradient( #000,rgba(0,0,0,0.1));
+    width: 100%;
+    top: 0%;
+    position: fixed;
+}
+#about, #about-home, #apply{
+    transition: all 0.3s ease-in-out;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 100px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255);
+}
+.logo a{
+    display: flex;
+    text-decoration: none;
+}
+.logo img{
+    height: 50px;
+}
+.univ h1{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Passion One';
+}
+.univ {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: #fff;
+
+}
+.univ h2{
+    color: rgb(0, 229, 255);
+    font-size: 15px;
+    font-weight: 900;
+}
+/* navlink-------------------------- */
+.navlink{
+    flex: 1;
+    text-align: right;
+}
+.navlink ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 2px 8px;
+    margin: 0px 15px;
+    /* border: 1px solid black; */
+}
+.navlink ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.navlink ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navlink ul li:hover:after{
+    width: 100%;
+}
+.navlink ul li:hover a{
+    color: rgb(255, 161, 29);
+    transition: 0.5s;
+    font-size: 30px;
+}
+
+.navlink ul li #about{
+    color: rgb(255, 203, 144);
+}
+.navlink ul li #about:hover{
+    color: rgb(255, 161, 29);
+}
+
+/* newlink ------------------------------- */
+.newlink{
+    flex: 1;
+    text-align: right;
+}
+.newlink ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 2px 8px;
+    margin: 0px 15px;
+}
+.newlink ul li a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+.newlink ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(255, 161, 29);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.newlink ul li:hover:after{
+    width: 100%;
+}
+.newlink ul li:hover a{
+    color: rgb(255, 161, 29);
+    transition: 0.5s;
+    font-size: 30px;
+}
+.navlink ul li #apply-apply{
+    color: rgb(255, 203, 144);
+}
+.navlink ul li #apply-apply{
+    color: rgb(255, 161, 29);
+}
+
+.navlink ul li #about{
+    color: rgb(255, 203, 144);
+}
+.navlink ul li #about:hover{
+    color: rgb(255, 161, 29);
+}
+
+/* -----------bg------------------------ */
+#banner{
+    background: url(img/gathering.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 730px;
+}
+#bannerabout{
+    background-image: linear-gradient(rgba(11, 12, 12, 0.766), rgba(37, 39, 44, 0.67)),url(img/1_XoX170OB7K5bRm6z24DysQ.jpeg) ; 
+    background-size: 90%;
+    background-attachment: fixed;
+
+    background-position: center;
+    height: 430px;
+}
+/* ---------------------Content----------------- */
+.content{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+.content .werd{
+    font-size: 62px;
+    color: #fff;
+    text-shadow: 10px 10px 10px black;
+}
+.content-about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 150px;
+}
+.content-about .werds h1{
+    font-weight: bolder;
+    color: #fff;
+    font-family: "Source Sans Pro";
+    font-size: 60px;
+}
+.content-about .werds p{
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 200px;
+}
+
+/* --------------sectionnnnnnnnn------------------------- */
+.Academic{
+    padding: 0 50px;
+    margin: auto;
+    text-align: center;
+    padding-top: 120px;
+}
+.Academics{
+    padding: 50px 50px;
+    margin: auto;
+    text-align: center;
+}
+.Academic h1{
+    font-size: 60px;
+}
+.row{
+    margin-top: 2%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+.academic-col{
+    flex-basis: 32%;
+    position: relative;
+    overflow: hidden;
+}
+.academic-col h1{
+    font-family:"Source Sans Pro" ;
+    margin-top: 10px;
+}
+.image-box {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 540px;
+}
+.image-box img {
+    width: 100%;
+    height: 300px;
+    transition: all 0.3s;
+    display: block;
+    transform: scale(1);
+}
+
+.image-box:hover img {
+    transform: scale(1.1);
+}
+
+.layer{
+    margin-top: 5px ;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    text-align: start;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer h3{
+    margin-bottom: 5px;
+}
+
+#bg{
+    padding-top: 80px;
+    padding-bottom: 10px;
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.648), rgba(211, 205, 205, 0.155)), url(img/university.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 540px;
+}
+
+/* -------------------footer---------------------- */
+footer{
+    /* padding: 20px; */
+    background-color: #000;
+    height: 100px;
+}
+.wording h2{
+    color: #fff;
+    /* width: 200px; */
+    font-size: 12px;
+}
+.wording p{
+    color: gray;
+    margin-top: 5px;
+    font-size: 9px;
+}
+.nav2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 100px;
+}
+
+.navlink2 ul{
+    /* border: 2px solid #fff; */
+    /* padding: 10px; */
+}
+.navlink2 ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+.navlink2 ul li:hover{
+    border: 2px solid #ed6a47;
+    transition: 0.5s;
+}
+
+.navlink2 ul li a{
+    list-style: none;
+    text-decoration: none;
+}
+.navlink2 .fab:hover{
+    color: #ed6a47;
+    transition: 0.5s;
+}
+.navlink2 .fab{
+    color: #fff;
+    font-size: 20px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
